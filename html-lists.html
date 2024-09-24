@@ -103,6 +103,9 @@
 									<li>
 										<a class="dropdown-item" href="html-headings.html">Headings</a>
 									</li>
+									<li>
+										<a class="dropdown-item" href="html-lists.html">Lists</a>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -216,9 +219,9 @@
 					<h3>Example:</h3>
 					<textarea cols="50" rows="8" style="resize: none">
 &lt;ol&gt;
-&lt;li&gt;First Item&lt;/li&gt;
-&lt;li&gt;Second Item&lt;/li&gt;
-&lt;li&gt;Third Item&lt;/li&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
 &lt;/ol&gt;
                     </textarea
 					>
@@ -257,9 +260,9 @@
 					<h3>Example:</h3>
 					<textarea cols="50" rows="8" style="resize: none">
  &lt;ol type="I"&gt;
- &lt;li&gt;First Item&lt;/li&gt;
- &lt;li&gt;Second Item&lt;/li&gt;
- &lt;li&gt;Third Item&lt;/li&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
  &lt;/ol&gt;
                     </textarea
 					>
@@ -286,9 +289,9 @@
 					<h3>Example:</h3>
 					<textarea cols="50" rows="8" style="resize: none">
 &lt;ul&gt;
-&lt;li&gt;First Item&lt;/li&gt;
-&lt;li&gt;Second Item&lt;/li&gt;
-&lt;li&gt;Third Item&lt;/li&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
 &lt;/ul&gt;
                     </textarea
 					>
@@ -316,12 +319,12 @@
 					<h3>Example:</h3>
 					<textarea cols="50" rows="11" style="resize: none">
 &lt;dl&gt;
-&lt;dt&gt;HTML&lt;/dt&gt;
-&lt;dd&gt;A markup language used to create web pages.&lt;/dd&gt;
-&lt;dt&gt;CSS&lt;/dt&gt;
-&lt;dd&gt;A stylesheet language used to describe the presentation of a web page.&lt;/dd&gt;
-&lt;dt&gt;JavaScript&lt;/dt&gt;
-&lt;dd&gt;A programming language used to add interactivity to a web page.&lt;/dd&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;A markup language used to create web pages.&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;A stylesheet language used to describe the presentation of a web page.&lt;/dd&gt;
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;A programming language used to add interactivity to a web page.&lt;/dd&gt;
 &lt;/dl&gt;
                     </textarea
 					>
@@ -344,7 +347,88 @@
 			<article>
 				<section>
 					<h2>Nested Lists</h2>
-					<p></p>
+					<p>
+						You can also create nested lists, where one list is placed inside another.
+						This is useful for creating multi-level categories.
+					</p>
+				</section>
+				<section>
+					<h3>Example Nested Ordered Lists</h3>
+					<textarea cols="50" rows="15" style="resize: none">
+&lt;ol&gt;
+    &lt;li&gt;Item 1
+        &lt;ol&gt;
+            &lt;li&gt;Subitem 1&lt;/li&gt;
+            &lt;li&gt;Subitem 2&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ol&gt;
+            &lt;li&gt;Subitem 3&lt;/li&gt;
+            &lt;li&gt;Subitem 4&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+                    </textarea
+					>
+				</section>
+				<section>
+					<h3>Output:</h3>
+					<ol>
+						<li>
+							Item 1
+							<ol>
+								<li>Subitem 1</li>
+								<li>Subitem 2</li>
+							</ol>
+						</li>
+						<li>
+							Item 2
+							<ol>
+								<li>Subitem 3</li>
+								<li>Subitem 4</li>
+							</ol>
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Example Unordered Lists</h3>
+					<textarea cols="50" rows="15" style="resize: none">
+&lt;ul&gt;
+    &lt;li&gt;Item 1
+        &lt;ul&gt;
+            &lt;li&gt;Subitem 1&lt;/li&gt;
+            &lt;li&gt;Subitem 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 2
+        &lt;ul&gt;
+            &lt;li&gt;Subitem 3&lt;/li&gt;
+            &lt;li&gt;Subitem 4&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                    </textarea
+					>
+				</section>
+				<section>
+					<h3>Output:</h3>
+					<ul>
+						<li>
+							Item 1
+							<ul>
+								<li>Subitem 1</li>
+								<li>Subitem 2</li>
+							</ul>
+						</li>
+						<li>
+							Item 2
+							<ul>
+								<li>Subitem 3</li>
+								<li>Subitem 4</li>
+							</ul>
+						</li>
+					</ul>
 				</section>
 			</article>
 			<br /><br />
