@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML - Hyperlinks | Lemoore College - COMP Review</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<!-- bootstrap navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">FA24.COMP1A.Review</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown visually-hidden">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>Bootstrap</a
+								>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="bootstrap.html" class="dropdown-item"
+											>Add Bootstrap Library</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a href="buttons.html" class="dropdown-item">Buttons</a>
+									</li>
+									<li>
+										<a href="navbars.html" class="dropdown-item">Navbars</a>
+									</li>
+									<li>
+										<a href="sidebars.html" class="dropdown-item">Sidebars</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item visually-hidden">
+								<a class="nav-link" href="google_fonts.html">Google Fonts</a>
+							</li>
+							<li class="nav-item dropdown visually-hidden">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									FontAwesome
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="font_awesome_4.html">Font Awesome 4</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="font_awesome_6.html">Font Awesome 6</a>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item visually-hidden">
+								<a class="nav-link disabled">Disabled</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									HTML
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="html-comments.html">Comments</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="html-headings.html">Headings</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="html-hyperlinks.html">Hyperlinks</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="html-lists.html">Lists</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Web Resources
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+											target="_blank"
+											>MDN HTML Documentation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+											target="_blank"
+											>MDN CSS Documentation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+											target="_blank"
+											>MDN JavaScript Documentation</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://docs.emmet.io/cheat-sheet/"
+											target="_blank"
+											>Emmet Cheat Sheet</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+											target="_blank"
+											>Stanford HTML Cheat Sheet</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://validator.w3.org/"
+											target="_blank"
+											>W3C HTML Validation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="hhttps://jigsaw.w3.org/css-validator/"
+											target="_blank"
+											>W3C CSS Validation</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="https://loremipsum.io/" target="_blank"
+											>Lorem Ipsum Generator</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- end of bootstrap navbar-->
+			<!-- bootstrap hero -->
+			<div class="bg-dark text-secondary px-4 py-5 text-center">
+				<div class="py-5">
+					<h1 class="display-5 fw-bold text-white">HTML - Hyperlinks</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="fs-5 mb-4">
+							Hyperlinks (or links) are one of the most fundamental elements of the
+							web, allowing users to navigate between pages, download resources, and
+							access external websites. In HTML, hyperlinks are created using the
+							<code>&lt;a&gt;</code> (anchor) tag. This tutorial will guide you through
+							how to create and use hyperlinks effectively in your HTML documents.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end of bootstrap hero -->
+		</header>
+		<main>
+			<section>
+				<h2>Basic Syntax of a Hyperlink</h2>
+				<p>
+					The <code>&lt;a&gt;</code> tag is used to define hyperlinks. The most
+					important attribute for this tag is <code>href</code>, which specifies the
+					URL (Uniform Resource Locator) the link points to.
+				</p>
+				<h3>Syntax</h3>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="URL"&gt;Link Text&lt;/a&gt;
+                </textarea
+				>
+				<ul>
+					<li><code>href="URL"</code>: Specifies the destination URL or file.</li>
+					<li><code>Link Text</code>: The clickable text that the user will see.</li>
+				</ul>
+				<h3>Example</h3>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					In this example, clicking the text "Visit Example" will take the user to
+					<code>https://www.example.com</code>.
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Types of Hyperlinks</h2>
+				<h3>Absolute URLs</h3>
+				<p>
+					These are full links that include the protocol (e.g.,
+					<code>https://</code>) and the domain name. They point to web pages on
+					other websites.
+				</p>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;
+                </textarea
+				>
+				<h3>Relative URLs</h3>
+				<p>
+					These are partial links that reference other pages or files on the same
+					website. They are commonly used for internal navigation within a website.
+				</p>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+                </textarea
+				>
+				<h3>Anchor Links (In-Page Links)</h3>
+				<p>
+					Anchor links allow users to jump to a specific section of the same webpage.
+					The target section is defined by an <code>id</code> attribute, and the link
+					uses a hash (<code>#</code>) to point to that <code>id</code>.
+				</p>
+				<textarea cols="50" rows="6" style="resize: none">
+&lt;!-- The link --&gt;
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;
+
+&lt;!-- The target section --&gt;
+&lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+                </textarea
+				>
+			</section>
+			<hr />
+			<section>
+				<h2>Opening Links in a New Tab</h2>
+				<p>
+					To open a link in a new tab, use the <code>target</code> attribute with the
+					value <code>_blank</code>. This is useful for external links so users can
+					open the link without leaving your website.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="3" style="resize: none">
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example (Opens in New Tab)&lt;/a&gt;
+                </textarea
+				>
+				<p>When the user clicks this link, it will open in a new browser tab.</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Adding a Title to Links</h2>
+				<p>
+					The <code>title</code> attribute provides additional information when the
+					user hovers over the link. It's a helpful way to give users more context
+					about the link.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="3" style="resize: none">
+&lt;a href="https://www.example.com" title="Go to Example website"&gt;Visit Example&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					When the user hovers over the link text "Visit Example," the tooltip "Go to
+					Example website" will appear.
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Linking to an Email Address</h2>
+				<p>
+					You can create a hyperlink that opens the user's default email application
+					with a pre-defined email address using the <code>mailto:</code> scheme in
+					the <code>href</code> attribute.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="3" style="resize: none">
+&lt;a href="mailto:support@example.com"&gt;Email Us&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					Clicking this link will open an email client with a new message addressed
+					to support@example.com.
+				</p>
+				<h3>Example with Pre-defined Email Subject &amp; body</h3>
+				<textarea cols="50" rows="6" style="resize: none">
+&lt;a href="mailto:support@example.com?subject=Help%20Request&body=Please%20describe%20your%20issue."&gt;
+    Email Support
+&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					In this example, the email subject is set to "Help Request," and the body
+					is pre-filled with "Please describe your issue."
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Linking to a Phone Number</h2>
+				<p>
+					To create a link that opens the phone dialer on mobile devices, use the
+					<code>tel:</code> scheme in the <code>href</code> attribute.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					Clicking this link on a mobile device will open the dialer with the phone
+					number <code>+1234567890</code>.
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Downloading File with Hyperlinks</h2>
+				<p>
+					You can allow users to download files by using the
+					<code>download</code> attribute. When the link is clicked, the browser will
+					download the file instead of navigating to it.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="1" style="resize: none">
+&lt;a href="files/sample.pdf" download&gt;Download PDF&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					In this example, clicking the "Download PDF" link will prompt the browser
+					to download <code>sample.pdf</code> instead of opening it.
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Hyperlinking an Image</h2>
+				<p>
+					You can make images clickable by placing an <code>&lt;a&gt;</code> tag
+					around an <code>&lt;img&gt;</code> tag. When the image is clicked, it will
+					navigate to the link's destination.
+				</p>
+				<h3>Example</h3>
+				<textarea cols="50" rows="5" style="resize: none">
+&lt;a href="https://www.example.com"&gt;
+    &lt;img src="logo.png" alt="Example Logo"&gt;
+&lt;/a&gt;
+                </textarea
+				>
+				<p>
+					In this case, clicking the image with the source <code>logo.png</code> will
+					take the user to <code>https://www.example.com</code>.
+				</p>
+			</section>
+			<hr />
+			<section>
+				<h2>Example:Full HTML Document with Hyperlinks</h2>
+				<p>
+					Here's a complete example of a webpage containing various types of links:
+				</p>
+				<textarea cols="50" rows="55" style="resize: none">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML Hyperlinks Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to the Hyperlinks Tutorial&lt;/h1&gt;
+
+    &lt;!-- Absolute URL link --&gt;
+    &lt;p&gt;&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Relative URL link --&gt;
+    &lt;p&gt;&lt;a href="about.html"&gt;Learn About Us&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Anchor link (In-page link) --&gt;
+    &lt;p&gt;&lt;a href="#contact"&gt;Jump to Contact Section&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Open link in a new tab --&gt;
+    &lt;p&gt;&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example (New Tab)&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Link with a title --&gt;
+    &lt;p&gt;&lt;a href="https://www.example.com" title="Go to Example website"&gt;Visit Example with Title&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Email link --&gt;
+    &lt;p&gt;&lt;a href="mailto:support@example.com"&gt;Email Us&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Phone link --&gt;
+    &lt;p&gt;&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Download link --&gt;
+    &lt;p&gt;&lt;a href="files/sample.pdf" download&gt;Download Our PDF&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Image link --&gt;
+    &lt;p&gt;&lt;a href="https://www.example.com"&gt;&lt;img src="logo.png" alt="Example Logo"&gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;!-- Contact Section --&gt;
+    &lt;h2 id="contact"&gt;Contact Us&lt;/h2&gt;
+    &lt;p&gt;If you have any questions, feel free to &lt;a href="mailto:support@example.com"&gt;send us an email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </textarea
+				>
+			</section>
+			<hr />
+			<section>
+				<h2>Best Practices for Using Hyperlinks</h2>
+				<ul>
+					<li>
+						Use Descriptive Link Text: Avoid using generic terms like "Click here" for
+						link text. Instead, describe the link's destination or purpose, e.g.,
+						"Download our brochure" or "Learn more about our services."
+					</li>
+					<li>
+						Use <code>target="_blank"</code> Sparingly: Opening links in a new tab can
+						disrupt the user's flow. Use this attribute only for external websites
+						where you don't want the user to leave your page.
+					</li>
+					<li>
+						Check Links Regularly: Make sure all links work correctly and point to
+						valid URLs. Broken links can frustrate users and hurt your website's SEO.
+					</li>
+					<li>
+						Consider Accessibility: Ensure that the <code>href</code> and
+						<code>title</code> attributes provide clear, useful information for users
+						with screen readers.
+					</li>
+				</ul>
+			</section>
+            <hr>
+            <section>
+				<h2>Additional Resources</h2>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+							target="_blank"
+							>MDN Web Docs - HTML Hyperlinks</a
+						>
+					</li>
+					<li>
+						<a href="https://www.w3schools.com/html/html_links.asp" target="_blank"
+							>W3Schools - HTML Hyperlinks</a
+						>
+					</li>
+				</ul>
+			</section>
+			<br /><br />
+		</main>
+		<!-- bootstrap sticky footer -->
+		<footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+			<div class="container">
+				<span class="text-body-secondary"
+					>&copy; 2024 COMP Review by Jonathan Cruz Production. All Rights
+					Reserved.</span
+				>
+			</div>
+		</footer>
+		<!-- end of bootstrap sticky footer -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
