@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML - Semantics | Lemoore College - COMP Review</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header>
+			<!-- bootstrap navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">FA24.COMP1A.Review</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									HTML
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="html-comments.html">Comments</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="html-headings.html">Headings</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="html-hyperlinks.html">Hyperlinks</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="html-lists.html">Lists</a>
+									</li>
+                                    <li>
+										<a class="dropdown-item" href="html-semantics.html">Semantics</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Web Resources
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+											target="_blank"
+											>MDN HTML Documentation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+											target="_blank"
+											>MDN CSS Documentation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+											target="_blank"
+											>MDN JavaScript Documentation</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://docs.emmet.io/cheat-sheet/"
+											target="_blank"
+											>Emmet Cheat Sheet</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+											target="_blank"
+											>Stanford HTML Cheat Sheet</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="https://validator.w3.org/"
+											target="_blank"
+											>W3C HTML Validation</a
+										>
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="hhttps://jigsaw.w3.org/css-validator/"
+											target="_blank"
+											>W3C CSS Validation</a
+										>
+									</li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="https://loremipsum.io/" target="_blank"
+											>Lorem Ipsum Generator</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- end of bootstrap navbar-->
+			<!-- bootstrap hero -->
+			<div class="bg-dark text-secondary px-4 py-5 text-center">
+				<div class="py-5">
+					<h1 class="display-5 fw-bold text-white">HTML - Semantics</h1>
+					<div class="col-lg-6 mx-auto">
+						<p class="fs-5 mb-4">
+							HTML5 introduced several new semantic elements that provide meaning to
+							the structure of a webpage. Semantic HTML helps browsers, search engines,
+							and developers understand the context of the content, improving
+							readability, accessibility, and SEO (Search Engine Optimization). This
+							tutorial will guide you through the basics of semantic elements and how
+							to use them effectively.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end of bootstrap hero -->
+		</header>
+		<main>
+			<section>
+				<h2>What is Semantic HTML?</h2>
+				<p>
+					Semantic HTML refers to the use of HTML elements that clearly describe
+					their meaning both to the browser and the developer. These elements are
+					used to define the different parts of a webpage (e.g., headers, footers,
+					articles) and their roles, making the structure more logical and organized.
+				</p>
+			</section>
+			<section>
+				<h2>Why Use Semantic HTML?</h2>
+				<ul>
+					<li>
+						Improved Readability: Semantic elements make the code more understandable
+						for developers by defining clear sections and roles.
+					</li>
+					<li>
+						Accessibility: Screen readers and other assistive technologies rely on
+						semantic elements to help users with disabilities navigate the webpage
+						effectively.
+					</li>
+					<li>
+						SEO Benefits: Search engines use semantic HTML to better index and rank
+						webpages by understanding the content's structure and context.
+					</li>
+					<li>
+						Maintainability: Semantically structured code is easier to maintain and
+						update, especially for large websites.
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Common HTML5 Semantic Elements</h2>
+				<p>Here are the most commonly used semantic elements in HTML5:</p>
+				<table class="table table-dark table-striped">
+					<thead>
+						<tr>
+							<th>Element</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>&lt;header&gt;</code></td>
+							<td>
+								Defines the header of a webpage or section. Typically contains
+								navigation or introductory content.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;nav&gt;</code></td>
+							<td>Defines navigation links, such as menus or tables of contents.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;main&gt;</code></td>
+							<td>
+								Represents the main content of the document. It should contain the
+								content unique to that page.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;article&gt;</code></td>
+							<td>
+								Defines a standalone piece of content, such as a blog post or news
+								article.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;section&gt;</code></td>
+							<td>Defines a thematic grouping of content, often with a heading.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;aside&gt;</code></td>
+							<td>
+								Represents content that is tangentially related to the main content
+								(like a sidebar).
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;footer&gt;</code></td>
+							<td>
+								Defines the footer of a webpage or section, often containing copyright
+								info or links.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;figure&gt;</code></td>
+							<td>
+								Represents media, such as images, charts, or diagrams, along with a
+								caption.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;figcaption&gt;</code></td>
+							<td>Provides a caption for the <code>&lt;figure&gt;</code> element.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;time&gt;</code></td>
+							<td>Defines a specific time or date.</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h2>Example of Semantic HTML Structure</h2>
+				<p>Here's an example that uses many of the new HTML5 semantic elements:</p>
+				<textarea cols="100" rows="60" style="resize: none">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- Header Section --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Awesome Blog&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Main Content Section --&gt;
+    &lt;main&gt;
+
+        &lt;!-- Article Section --&gt;
+        &lt;article&gt;
+            &lt;header&gt;
+                &lt;h2&gt;The Importance of Semantic HTML&lt;/h2&gt;
+                &lt;p&gt;&lt;time datetime="2024-09-24"&gt;September 24, 2024&lt;/time&gt; by &lt;strong&gt;John Doe&lt;/strong&gt;&lt;/p&gt;
+            &lt;/header&gt;
+
+            &lt;p&gt;Semantic HTML is a powerful way to create accessible, readable, and maintainable websites. It improves SEO and helps screen readers interpret the structure of the page.&lt;/p&gt;
+
+            &lt;figure&gt;
+                &lt;img src="semantic-html.png" alt="Semantic HTML Diagram"&gt;
+                &lt;figcaption&gt;A diagram explaining semantic HTML elements.&lt;/figcaption&gt;
+            &lt;/figure&gt;
+
+        &lt;/article&gt;
+
+        &lt;!-- Aside Section --&gt;
+        &lt;aside&gt;
+            &lt;h3&gt;Related Articles&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Understanding HTML5 Elements&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Improving Accessibility with HTML&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/aside&gt;
+
+    &lt;/main&gt;
+
+    &lt;!-- Footer Section --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 My Awesome Blog&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </textarea
+				>
+				<h3>Explanation</h3>
+				<ul>
+					<li>
+						<code>&lt;header&gt;</code>: Contains the main heading and navigation
+						links.
+					</li>
+					<li>
+						<code>&lt;main&gt;</code>: Wraps the main content of the page, excluding
+						the header and footer.
+					</li>
+					<li>
+						<code>&lt;article&gt;</code>: Represents a blog post, with a title and
+						date inside its own <code>&lt;header&gt;</code>.
+					</li>
+					<li>
+						<code>&lt;figure&gt;</code>: Wraps an image and its caption
+						(<code>&lt;figcaption&gt;</code>).
+					</li>
+					<li>
+						<code>&lt;aside&gt;</code>: Contains related links, which are tangential
+						to the main content.
+					</li>
+					<li>
+						<code>&lt;footer&gt;</code>: Holds the footer with copyright information.
+					</li>
+				</ul>
+			</section>
+			<hr />
+			<section>
+				<h2>Non-Semantic Elements (Comparison)</h2>
+				<p>
+					In contrast to semantic elements, non-semantic elements do not provide any
+					specific meaning about the content. Examples of non-semantic elements
+					include:
+				</p>
+				<ul>
+					<li>
+						<code>&lt;div&gt;</code>: A generic container for grouping elements.
+					</li>
+					<li><code>&lt;span&gt;</code>: An inline container for text.</li>
+				</ul>
+			</section>
+			<hr />
+			<section>
+				<h2>Advantages of Semantic HTML</h2>
+				<ul>
+					<li>
+						Better Code Structure: Semantic elements clearly define the different
+						sections of a webpage, making the code more organized and easier to
+						navigate.
+					</li>
+					<li>
+						Improved Accessibility: Screen readers and other assistive technologies
+						can use semantic elements to help users understand the content's
+						structure.
+					</li>
+					<li>
+						SEO Benefits: Search engines use semantic tags to index your content more
+						accurately, potentially improving search rankings.
+					</li>
+					<li>
+						Maintainability: Using semantic HTML makes your code more readable and
+						maintainable over time, especially in larger projects.
+					</li>
+				</ul>
+			</section>
+			<hr />
+			<section>
+				<h2>Additional Resources</h2>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+							target="_blank"
+							>MDN Web Docs - HTML Semantics Glossary</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+							target="_blank"
+							>W3Schools - HTML Semantic Elements</a
+						>
+					</li>
+				</ul>
+			</section>
+			<br /><br />
+		</main>
+		<!-- bootstrap sticky footer -->
+		<footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+			<div class="container">
+				<span class="text-body-secondary"
+					>&copy; 2024 COMP Review by Jonathan Cruz Production. All Rights
+					Reserved.</span
+				>
+			</div>
+		</footer>
+		<!-- end of bootstrap sticky footer -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
