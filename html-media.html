@@ -228,6 +228,57 @@
 					to embed audio files directly into a webpage. You can use various file
 					formats such as MP3, WAV, and Ogg.
 				</p>
+				<h4>Example</h4>
+				<textarea cols="50" rows="8" style="resize: none">
+&lt;audio controls&gt;
+    &lt;source src="https://www.example.com/song.mp3" type="audio/mpeg"&gt;
+    &lt;source src="https://www.example.com/song.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+                </textarea
+				>
+				<h4>Explanation</h4>
+				<ul>
+					<li>
+						The <code>controls</code> attribute adds audio controls for the user.
+					</li>
+					<li>
+						Multiple <code>&lt;source&gt;</code> tags are used to ensure compatibility
+						across different browsers.
+					</li>
+					<li>
+						The fallback text ("Your browser does not support the audio element.")
+						will be displayed if the browser does not support the
+						<code>&lt;audio&gt;</code> tag.
+					</li>
+				</ul>
+				<h3>Autoplay and Loop</h3>
+				<p>You can make the audio autoplay or loop continuously.</p>
+				<h4>Example</h4>
+				<textarea cols="50" rows="5" style="resize: none">
+&lt;audio controls autoplay loop&gt;
+    &lt;source src="https://www.example.com/music.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+                </textarea
+				>
+				<h4>Explanation</h4>
+				<ul>
+					<li>
+						<code>autoplay</code>: Automatically starts the audio when the page loads.
+					</li>
+					<li>
+						<code>loop</code>: The audio will restart once it finishes playing.
+					</li>
+				</ul>
+                <h3>Muted Audio</h3>
+				<p>To start audio in muted mode, use the <code>muted</code> attribute.</p>
+				<h4>Example</h4>
+				<textarea cols="50" rows="5" style="resize: none">
+&lt;audio controls autoplay muted&gt;
+    &lt;source src="https://www.example.com/music.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+                </textarea
+				>
 			</section>
 			<hr />
 			<section>
