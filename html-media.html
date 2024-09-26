@@ -270,7 +270,7 @@
 						<code>loop</code>: The audio will restart once it finishes playing.
 					</li>
 				</ul>
-                <h3>Muted Audio</h3>
+				<h3>Muted Audio</h3>
 				<p>To start audio in muted mode, use the <code>muted</code> attribute.</p>
 				<h4>Example</h4>
 				<textarea cols="50" rows="5" style="resize: none">
@@ -283,6 +283,33 @@
 			<hr />
 			<section>
 				<h2>Embedding Video</h2>
+				<p>
+					The <code>&lt;video&gt;</code> tag in HTML5 allows you to embed video
+					files. Like the <code>&lt;audio&gt;</code> element, it supports multiple
+					formats, including MP4, WebM, and Ogg.
+				</p>
+				<h4>Example</h4>
+				<textarea cols="50" rows="8" style="resize: none">
+&lt;video controls&gt;
+    &lt;source src="video-file.mp4" type="video/mp4"&gt;
+    &lt;source src="video-file.webm" type="video/webm"&gt;
+    Your browser does not support the video element.
+&lt;/video&gt;
+
+                </textarea
+				>
+				<h4>Explanation</h4>
+				<ul>
+					<li><code>&lt;video&gt;</code>: Defines the video element.</li>
+					<li>
+						<code>controls</code>: Adds built-in video controls (play, pause, volume,
+						fullscreen).
+					</li>
+					<li>
+						<code>&lt;source&gt;</code>: Specifies the video file source. Multiple
+						formats can be provided for better browser compatibility.
+					</li>
+				</ul>
 			</section>
 			<hr />
 			<section>
