@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Tables | Lemoore College - COMP Review</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- bootstrap navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FA24.COMP1A.Review</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="html-comments.html"
+                      >Comments</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-headings.html"
+                      >Headings</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-hyperlinks.html"
+                      >Hyperlinks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-lists.html">Lists</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-media.html">Media</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-semantics.html"
+                      >Semantics</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-tables.html">Tables</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Web Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                      target="_blank"
+                      >MDN HTML Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                      target="_blank"
+                      >MDN CSS Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                      target="_blank"
+                      >MDN JavaScript Documentation</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://docs.emmet.io/cheat-sheet/"
+                      target="_blank"
+                      >Emmet Cheat Sheet</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+                      target="_blank"
+                      >Stanford HTML Cheat Sheet</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://validator.w3.org/"
+                      target="_blank"
+                      >W3C HTML Validation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="hhttps://jigsaw.w3.org/css-validator/"
+                      target="_blank"
+                      >W3C CSS Validation</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://loremipsum.io/"
+                      target="_blank"
+                      >Lorem Ipsum Generator</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end of bootstrap navbar-->
+      <!-- bootstrap hero -->
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">HTML - Tables</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">
+              HTML tables are used to display data in a structured format of
+              rows and columns. Tables are helpful for organizing information
+              such as data sets, pricing lists, schedules, and more. In this
+              tutorial, you'll learn the basics of creating tables in HTML, how
+              to format them, and some best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of bootstrap hero -->
+    </header>
+    <main>
+      <section>
+        <h2>Basic Table Structure</h2>
+        <p>
+          An HTML table consists of multiple tags that define its structure:
+        </p>
+        <ul>
+          <li>
+            <code>&lt;table&gt;</code>: This tag creates the table itself.
+          </li>
+          <li><code>&lt;tr&gt;</code>: Defines a row in the table.</li>
+          <li>
+            <code>&lt;th&gt;</code>: Defines a header cell in a table (header
+            cells are typically bold and centered by default).
+          </li>
+          <li><code>&lt;td&gt;</code>: Defines a standard data cell.</li>
+        </ul>
+        <h4>Example</h4>
+        <textarea cols="50" rows="16" style="resize: none">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </textarea>
+        <h4>Output</h4>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>25</td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Table Headers</h2>
+        <p>
+          The <code>&lt;th&gt;</code> tag is used for table headers, which are
+          bold and centered by default. These provide context for the data in
+          each column.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="16" style="resize: none">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Product&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Laptop&lt;/td&gt;
+        &lt;td&gt;$900&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Smartphone&lt;/td&gt;
+        &lt;td&gt;$600&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </textarea>
+        <h4>Output</h4>
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Laptop</td>
+            <td>$900</td>
+          </tr>
+          <tr>
+            <td>Smartphone</td>
+            <td>$600</td>
+          </tr>
+        </table>
+        <p>
+          In this example, "Product" and "Price" are headers that describe the
+          type of data in the columns below them.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Spanning Rows and Columns</h2>
+        <p>
+          HTML allows you to merge cells across multiple rows or columns using
+          the <code>rowspan</code> and <code>colspan</code> attributes.
+        </p>
+        <h3>Column Span (<code>colspan</code>)</h3>
+        <p>
+          You can merge multiple columns into one using <code>colspan</code>.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="10" style="resize: none">
+&lt;table style="border: 1;"&gt;
+    &lt;tr&gt;
+        &lt;th colspan="2"&gt;Employee Information&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Doe&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </textarea>
+        <p>
+          In this example, the header "Employee Information" spans across two
+          columns.
+        </p>
+
+        <h3>Row Span (<code>rowspan</code>)</h3>
+        <p>
+          You can merge multiple columns into one using <code>rowspan</code>.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="10" style="resize: none">
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th rowspan="2"&gt;Product&lt;/th&gt;
+        &lt;td&gt;Laptop&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Smartphone&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </textarea>
+        <p>
+          In this example, the "Product" header spans across two rows, covering
+          the data for both "Laptop" and "Smartphone."
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>
+          Table Sections: <code>&lt;thead&gt;</code>,
+          <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>
+        </h2>
+        <p>
+          Tables can be divided into three sections using
+          <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and
+          <code>&lt;tfoot&gt;</code>. This structure improves readability and
+          makes it easier to style the table.
+        </p>
+        <ul>
+          <li><code>&lt;thead&gt;</code>: Contains the table's header rows.</li>
+          <li>
+            <code>&lt;tbody&gt;</code>: Contains the main body of the table,
+            where most of the data is stored.
+          </li>
+          <li>
+            <code>&lt;tfoot&gt;</code>: Contains the footer of the table, often
+            used for summary rows.
+          </li>
+        </ul>
+        <h4>Example</h4>
+        <textarea cols="50" rows="24" style="resize: none">
+&lt;table style="border: 1;"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Product&lt;/th&gt;
+            &lt;th&gt;Price&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Laptop&lt;/td&gt;
+            &lt;td&gt;$900&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Smartphone&lt;/td&gt;
+            &lt;td&gt;$600&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;Total Products: 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+        </textarea>
+        <h4>Output</h4>
+        <table style="border: 1">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laptop</td>
+              <td>$900</td>
+            </tr>
+            <tr>
+              <td>Smartphone</td>
+              <td>$600</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total Products: 2</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Best Practices for Using HTML Tables</h2>
+        <ul>
+          <li>
+            Use Tables for Tabular Data: Tables are designed to organize and
+            display structured data, not for page layout. For layout purposes,
+            use CSS grids or flexbox.
+          </li>
+          <li>
+            Always Use <code>&lt;th&gt;</code> for Headers: Clearly define
+            column or row headers with the <code>&lt;th&gt;</code> tag, which
+            improves accessibility for screen readers.
+          </li>
+          <li>
+            Use Descriptive Captions: If the table contains complex data, use a
+            <code>&lt;caption&gt;</code> to provide context to the user.
+          </li>
+          <li>
+            Keep Tables Responsive: Make tables responsive using CSS techniques,
+            such as setting the table width to 100% and using media queries for
+            mobile optimization.
+          </li>
+          <li>
+            Consider Accessibility: Use the <code>scope</code> attribute in
+            <code>&lt;th&gt;</code> elements (e.g., <code>scope="col"</code> or
+            <code>scope="row"</code>) to improve accessibility for users relying
+            on screen readers.
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Additional Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+              target="_blank"
+              >MDN Web Docs - HTML Tables</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/html/html_tables.asp"
+              target="_blank"
+              >W3Schools - HTML Tables</a
+            >
+          </li>
+        </ul>
+      </section>
+      <br /><br />
+    </main>
+    <!-- bootstrap sticky footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+      <div class="container">
+        <span class="text-body-secondary"
+          >&copy; 2024 COMP Review by Jonathan Cruz Production. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
+    <!-- end of bootstrap sticky footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
