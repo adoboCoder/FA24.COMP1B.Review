@@ -66,6 +66,9 @@
                   <li>
                     <a class="dropdown-item" href="html-lists.html">Lists</a>
                   </li>
+				  <li>
+                    <a class="dropdown-item" href="html-media.html">Media</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="html-semantics.html"
                       >Semantics</a
@@ -392,14 +395,121 @@
       <hr />
       <section>
         <h2>Full Example</h2>
+        <p>
+          Here's a complete example of how to embed images, audio, and video
+          into a webpage:
+        </p>
+        <textarea cols="50" rows="44" style="resize: none">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Images, Audio, and Video Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Embedding Multimedia in HTML&lt;/h1&gt;
+
+    &lt;!-- Embedding an Image --&gt;
+    &lt;h2&gt;Image Example&lt;/h2&gt;
+    &lt;img src="https://www.example.com/image.jpg" alt="Sample Image" width="600" height="400"&gt;
+
+    &lt;!-- Embedding an Audio File --&gt;
+    &lt;h2&gt;Audio Example&lt;/h2&gt;
+    &lt;audio controls&gt;
+        &lt;source src="https://www.example.com/audio.mp3" type="audio/mpeg"&gt;
+        &lt;source src="https://www.example.com/audio.ogg" type="audio/ogg"&gt;
+        Your browser does not support the audio element.
+    &lt;/audio&gt;
+
+    &lt;!-- Embedding a Video File --&gt;
+    &lt;h2&gt;Video Example&lt;/h2&gt;
+    &lt;video controls width="640" height="360" poster="https://www.example.com/poster.jpg"&gt;
+        &lt;source src="https://www.example.com/video.mp4" type="video/mp4"&gt;
+        &lt;source src="https://www.example.com/video.webm" type="video/webm"&gt;
+        Your browser does not support the video element.
+    &lt;/video&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </textarea>
       </section>
       <hr />
       <section>
         <h2>Best Practices</h2>
+        <ul>
+          <li>
+            Use Alternative Text for Images: Always provide descriptive
+            <code>alt</code> text for images to improve accessibility and SEO.
+          </li>
+          <li>
+            Provide Multiple Formats: For audio and video files, include
+            multiple formats (e.g., MP3, Ogg, MP4, WebM) to ensure compatibility
+            with different browsers.
+          </li>
+          <li>
+            Use Responsive Design: Make images and videos responsive to ensure
+            they display properly on all screen sizes.
+          </li>
+          <li>
+            Avoid Autoplay (When Unnecessary): Auto-playing media can annoy
+            users, so use it sparingly. Ensure videos are muted if they
+            autoplay.
+          </li>
+          <li>
+            Add Fallback Text: Always include fallback text for users with
+            unsupported browsers or devices.
+          </li>
+        </ul>
       </section>
       <hr />
       <section>
         <h2>Additional Resources</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+              target="_blank"
+              >MDN Web Docs - HTML Images</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"
+              target="_blank"
+              >MDN Web Docs - HTML Audio</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"
+              target="_blank"
+              >MDN Web Docs - HTML Videos</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/html/html_images.asp"
+              target="_blank"
+              >W3Schools - HTML Images</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/html/html5_audio.asp"
+              target="_blank"
+              >W3Schools - HTML Audio</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/html/html5_video.asp"
+              target="_blank"
+              >W3Schools - HTML Videos</a
+            >
+          </li>
+        </ul>
       </section>
       <br /><br />
     </main>
