@@ -1,295 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			HTML - Media: Images, Audio, and Video | Lemoore College - COMP Review
-		</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-	</head>
-	<body>
-		<header>
-			<!-- bootstrap navbar -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">FA24.COMP1A.Review</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="index.html">Home</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									HTML
-								</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a class="dropdown-item" href="html-comments.html">Comments</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="html-headings.html">Headings</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="html-hyperlinks.html">Hyperlinks</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="html-lists.html">Lists</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="html-semantics.html">Semantics</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Web Resources
-								</a>
-								<ul class="dropdown-menu">
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-											target="_blank"
-											>MDN HTML Documentation</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-											target="_blank"
-											>MDN CSS Documentation</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-											target="_blank"
-											>MDN JavaScript Documentation</a
-										>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://docs.emmet.io/cheat-sheet/"
-											target="_blank"
-											>Emmet Cheat Sheet</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
-											target="_blank"
-											>Stanford HTML Cheat Sheet</a
-										>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="https://validator.w3.org/"
-											target="_blank"
-											>W3C HTML Validation</a
-										>
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="hhttps://jigsaw.w3.org/css-validator/"
-											target="_blank"
-											>W3C CSS Validation</a
-										>
-									</li>
-									<li><hr class="dropdown-divider" /></li>
-									<li>
-										<a class="dropdown-item" href="https://loremipsum.io/" target="_blank"
-											>Lorem Ipsum Generator</a
-										>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-			<!-- end of bootstrap navbar-->
-			<!-- bootstrap hero -->
-			<div class="bg-dark text-secondary px-4 py-5 text-center">
-				<div class="py-5">
-					<h1 class="display-5 fw-bold text-white">
-						HTML - Media: Images, Audio, and Video
-					</h1>
-					<div class="col-lg-6 mx-auto">
-						<p class="fs-5 mb-4">
-							HTML provides elements for embedding multimedia content such as images,
-							audio, and video into a webpage. This tutorial will cover how to use
-							these elements effectively, providing examples and best practices for
-							embedding media content in your HTML documents.
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- end of bootstrap hero -->
-		</header>
-		<main>
-			<section>
-				<h2>Embedding Images</h2>
-				<p>
-					Images are added to web pages using the <code>&lt;img&gt;</code> tag. This
-					tag is a self-closing element that requires attributes to function
-					correctly.
-				</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="3" style="resize: none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      HTML - Media: Images, Audio, and Video | Lemoore College - COMP Review
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- bootstrap navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FA24.COMP1A.Review</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HTML
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="html-comments.html"
+                      >Comments</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-headings.html"
+                      >Headings</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-hyperlinks.html"
+                      >Hyperlinks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-lists.html">Lists</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="html-semantics.html"
+                      >Semantics</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Web Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                      target="_blank"
+                      >MDN HTML Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                      target="_blank"
+                      >MDN CSS Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                      target="_blank"
+                      >MDN JavaScript Documentation</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://docs.emmet.io/cheat-sheet/"
+                      target="_blank"
+                      >Emmet Cheat Sheet</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+                      target="_blank"
+                      >Stanford HTML Cheat Sheet</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://validator.w3.org/"
+                      target="_blank"
+                      >W3C HTML Validation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="hhttps://jigsaw.w3.org/css-validator/"
+                      target="_blank"
+                      >W3C CSS Validation</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://loremipsum.io/"
+                      target="_blank"
+                      >Lorem Ipsum Generator</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end of bootstrap navbar-->
+      <!-- bootstrap hero -->
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">
+            HTML - Media: Images, Audio, and Video
+          </h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">
+              HTML provides elements for embedding multimedia content such as
+              images, audio, and video into a webpage. This tutorial will cover
+              how to use these elements effectively, providing examples and best
+              practices for embedding media content in your HTML documents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of bootstrap hero -->
+    </header>
+    <main>
+      <section>
+        <h2>Embedding Images</h2>
+        <p>
+          Images are added to web pages using the <code>&lt;img&gt;</code> tag.
+          This tag is a self-closing element that requires attributes to
+          function correctly.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="3" style="resize: none">
 &lt;img src="https://www.example.com/image.jpg" alt="Example Image" width="400" height="300"&gt;
                 </textarea
-				>
-				<h5>Explanation</h5>
-				<ul>
-					<li><code>src</code>: Specifies the path or URL of the image.</li>
-					<li>
-						<code>alt</code>: Provides alternative text for the image, which is
-						important for accessibility and is displayed if the image fails to load.
-					</li>
-					<li>
-						<code>width</code> and <code>height</code>: Define the image dimensions
-						(optional).
-					</li>
-				</ul>
-				<h3>Linking an Image</h3>
-				<p>
-					You can make an image clickable by wrapping it in an anchor
-					(<code>&lt;a&gt;</code>) tag.
-				</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="5" style="resize: none">
+        >
+        <h5>Explanation</h5>
+        <ul>
+          <li><code>src</code>: Specifies the path or URL of the image.</li>
+          <li>
+            <code>alt</code>: Provides alternative text for the image, which is
+            important for accessibility and is displayed if the image fails to
+            load.
+          </li>
+          <li>
+            <code>width</code> and <code>height</code>: Define the image
+            dimensions (optional).
+          </li>
+        </ul>
+        <h3>Linking an Image</h3>
+        <p>
+          You can make an image clickable by wrapping it in an anchor
+          (<code>&lt;a&gt;</code>) tag.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="5" style="resize: none">
 &lt;a href="https://www.example.com"&gt;
     &lt;img src="https://www.example.com/logo.png" alt="Website Logo"&gt;
 &lt;/a&gt;
                 </textarea
-				>
-				<p>
-					When the image is clicked, the user will be directed to the URL specified
-					in the <code>&lt;a&gt;</code> tag.
-				</p>
-				<h3>Responsive Images</h3>
-				<p>
-					To make images responsive (i.e., they resize according to the screen size),
-					use CSS to control the image width relative to the screen size.
-				</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="3" style="resize: none">
+        >
+        <p>
+          When the image is clicked, the user will be directed to the URL
+          specified in the <code>&lt;a&gt;</code> tag.
+        </p>
+        <h3>Responsive Images</h3>
+        <p>
+          To make images responsive (i.e., they resize according to the screen
+          size), use CSS to control the image width relative to the screen size.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="3" style="resize: none">
 &lt;img src="https://www.example.com/image.jpg" alt="Responsive Image" style="width: 100%; height: auto;"&gt;
                 </textarea
-				>
-				<p>
-					The <code>width: 100%</code> ensures the image scales to the width of its
-					container, and <code>height: auto</code> maintains the image's aspect
-					ratio.
-				</p>
-			</section>
-			<hr />
-			<section>
-				<h2>Embedding Audio</h2>
-				<p>
-					HTML5 introduced the <code>&lt;audio&gt;</code> element, which allows you
-					to embed audio files directly into a webpage. You can use various file
-					formats such as MP3, WAV, and Ogg.
-				</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="8" style="resize: none">
+        >
+        <p>
+          The <code>width: 100%</code> ensures the image scales to the width of
+          its container, and <code>height: auto</code> maintains the image's
+          aspect ratio.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>Embedding Audio</h2>
+        <p>
+          HTML5 introduced the <code>&lt;audio&gt;</code> element, which allows
+          you to embed audio files directly into a webpage. You can use various
+          file formats such as MP3, WAV, and Ogg.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
 &lt;audio controls&gt;
     &lt;source src="https://www.example.com/song.mp3" type="audio/mpeg"&gt;
     &lt;source src="https://www.example.com/song.ogg" type="audio/ogg"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
                 </textarea
-				>
-				<h4>Explanation</h4>
-				<ul>
-					<li>
-						The <code>controls</code> attribute adds audio controls for the user.
-					</li>
-					<li>
-						Multiple <code>&lt;source&gt;</code> tags are used to ensure compatibility
-						across different browsers.
-					</li>
-					<li>
-						The fallback text ("Your browser does not support the audio element.")
-						will be displayed if the browser does not support the
-						<code>&lt;audio&gt;</code> tag.
-					</li>
-				</ul>
-				<h3>Autoplay and Loop</h3>
-				<p>You can make the audio autoplay or loop continuously.</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="5" style="resize: none">
+        >
+        <h4>Explanation</h4>
+        <ul>
+          <li>
+            The <code>controls</code> attribute adds audio controls for the
+            user.
+          </li>
+          <li>
+            Multiple <code>&lt;source&gt;</code> tags are used to ensure
+            compatibility across different browsers.
+          </li>
+          <li>
+            The fallback text ("Your browser does not support the audio
+            element.") will be displayed if the browser does not support the
+            <code>&lt;audio&gt;</code> tag.
+          </li>
+        </ul>
+        <h3>Autoplay and Loop</h3>
+        <p>You can make the audio autoplay or loop continuously.</p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="5" style="resize: none">
 &lt;audio controls autoplay loop&gt;
     &lt;source src="https://www.example.com/music.mp3" type="audio/mpeg"&gt;
 &lt;/audio&gt;
                 </textarea
-				>
-				<h4>Explanation</h4>
-				<ul>
-					<li>
-						<code>autoplay</code>: Automatically starts the audio when the page loads.
-					</li>
-					<li>
-						<code>loop</code>: The audio will restart once it finishes playing.
-					</li>
-				</ul>
-				<h3>Muted Audio</h3>
-				<p>To start audio in muted mode, use the <code>muted</code> attribute.</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="5" style="resize: none">
+        >
+        <h4>Explanation</h4>
+        <ul>
+          <li>
+            <code>autoplay</code>: Automatically starts the audio when the page
+            loads.
+          </li>
+          <li>
+            <code>loop</code>: The audio will restart once it finishes playing.
+          </li>
+        </ul>
+        <h3>Muted Audio</h3>
+        <p>
+          To start audio in muted mode, use the <code>muted</code> attribute.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="5" style="resize: none">
 &lt;audio controls autoplay muted&gt;
     &lt;source src="https://www.example.com/music.mp3" type="audio/mpeg"&gt;
 &lt;/audio&gt;
                 </textarea
-				>
-			</section>
-			<hr />
-			<section>
-				<h2>Embedding Video</h2>
-				<p>
-					The <code>&lt;video&gt;</code> tag in HTML5 allows you to embed video
-					files. Like the <code>&lt;audio&gt;</code> element, it supports multiple
-					formats, including MP4, WebM, and Ogg.
-				</p>
-				<h4>Example</h4>
-				<textarea cols="50" rows="8" style="resize: none">
+        >
+      </section>
+      <hr />
+      <section>
+        <h2>Embedding Video</h2>
+        <p>
+          The <code>&lt;video&gt;</code> tag in HTML5 allows you to embed video
+          files. Like the <code>&lt;audio&gt;</code> element, it supports
+          multiple formats, including MP4, WebM, and Ogg.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
 &lt;video controls&gt;
     &lt;source src="video-file.mp4" type="video/mp4"&gt;
     &lt;source src="video-file.webm" type="video/webm"&gt;
@@ -297,48 +315,108 @@
 &lt;/video&gt;
 
                 </textarea
-				>
-				<h4>Explanation</h4>
-				<ul>
-					<li><code>&lt;video&gt;</code>: Defines the video element.</li>
-					<li>
-						<code>controls</code>: Adds built-in video controls (play, pause, volume,
-						fullscreen).
-					</li>
-					<li>
-						<code>&lt;source&gt;</code>: Specifies the video file source. Multiple
-						formats can be provided for better browser compatibility.
-					</li>
-				</ul>
-			</section>
-			<hr />
-			<section>
-				<h2>Full Example</h2>
-			</section>
-			<hr />
-			<section>
-				<h2>Best Practices</h2>
-			</section>
-			<hr />
-			<section>
-				<h2>Additional Resources</h2>
-			</section>
-			<br /><br />
-		</main>
-		<!-- bootstrap sticky footer -->
-		<footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
-			<div class="container">
-				<span class="text-body-secondary"
-					>&copy; 2024 COMP Review by Jonathan Cruz Production. All Rights
-					Reserved.</span
-				>
-			</div>
-		</footer>
-		<!-- end of bootstrap sticky footer -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+        >
+        <h4>Explanation</h4>
+        <ul>
+          <li><code>&lt;video&gt;</code>: Defines the video element.</li>
+          <li>
+            <code>controls</code>: Adds built-in video controls (play, pause,
+            volume, fullscreen).
+          </li>
+          <li>
+            <code>&lt;source&gt;</code>: Specifies the video file source.
+            Multiple formats can be provided for better browser compatibility.
+          </li>
+        </ul>
+        <h4>Autoplay and Loop for Video</h4>
+        <p>
+          Similar to audio, you can make a video autoplay or loop continuously.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
+&lt;video controls autoplay loop width="640" height="360"&gt;
+    &lt;source src="https://www.example.com/movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                </textarea
+        >
+        <p>
+          <code>autoplay</code>: Automatically plays the video when the page
+          loads.
+        </p>
+        <p><code>loop</code>: Restarts the video once it finishes playing.</p>
+        <h4>Muted Video</h4>
+        <p>
+          Some browsers require muted videos for autoplay to work. You can mute
+          the video using the <code>muted</code> attribute.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
+&lt;video controls autoplay muted width="640" height="360"&gt;
+    &lt;source src="https://www.example.com/movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                </textarea
+        >
+        <h4>Adding Poster Images for Videos</h4>
+        <p>
+          You can display a preview image (poster) before the video starts
+          playing using the <code>poster</code> attribute.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
+&lt;video controls autoplay width="640" height="360" poster="poster-image.jpg"&gt;
+    &lt;source src="https://www.example.com/movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+        </textarea>
+        <p>
+          In this example, the <code>poster-image.jpg</code> will be shown
+          before the video starts playing.
+        </p>
+        <h4>Responsive Video</h4>
+        <p>
+          To make videos responsive, you can use CSS to control the video's
+          width relative to the screen size, similar to how responsive images
+          work.
+        </p>
+        <h4>Example</h4>
+        <textarea cols="50" rows="8" style="resize: none">
+&lt;video controls style="width: 100%; height: auto;"&gt;
+    &lt;source src="https://www.example.com/movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+        </textarea>
+        <p>
+          The <code>width: 100%</code> ensures that the video scales to the
+          width of its container, while <code>height: auto</code> maintains the
+          aspect ratio.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>Full Example</h2>
+      </section>
+      <hr />
+      <section>
+        <h2>Best Practices</h2>
+      </section>
+      <hr />
+      <section>
+        <h2>Additional Resources</h2>
+      </section>
+      <br /><br />
+    </main>
+    <!-- bootstrap sticky footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
+      <div class="container">
+        <span class="text-body-secondary"
+          >&copy; 2024 COMP Review by Jonathan Cruz Production. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
+    <!-- end of bootstrap sticky footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
