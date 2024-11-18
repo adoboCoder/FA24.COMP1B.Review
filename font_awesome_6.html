@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>HTML - Lists | Lemoore College - COMP Review</title>
+		<title>HTML - Template | Lemoore College - COMP Review</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -50,7 +50,7 @@
 									<li>
 										<a class="dropdown-item" href="html-headings.html">Headings</a>
 									</li>
-									<li>
+                                    <li>
 										<a class="dropdown-item" href="html-hyperlinks.html">Hyperlinks</a>
 									</li>
 									<li>
@@ -59,12 +59,12 @@
 									<li>
 										<a class="dropdown-item" href="html-media.html">Media</a>
 									  </li>
-                                    <li>
+									<li>
 										<a class="dropdown-item" href="html-semantics.html">Semantics</a>
 									</li>
 									<li>
 										<a class="dropdown-item" href="html-tables.html">Tables</a>
-									</li>
+									  </li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -202,13 +202,14 @@
 			<!-- bootstrap hero -->
 			<div class="bg-dark text-secondary px-4 py-5 text-center">
 				<div class="py-5">
-					<h1 class="display-5 fw-bold text-white">HTML - Lists</h1>
+					<h1 class="display-5 fw-bold text-white">HTML - Hyperlinks</h1>
 					<div class="col-lg-6 mx-auto">
 						<p class="fs-5 mb-4">
-							HTML lists are used to organize content in a structured and meaningful
-							way. There are three main types of lists in HTML: ordered lists
-							(<code>&lt;ol&gt;</code>), unordered lists (<code>&lt;ul&gt;</code>), and
-							definition lists (<code>&lt;dl&gt;</code>).
+							Hyperlinks (or links) are one of the most fundamental elements of the
+							web, allowing users to navigate between pages, download resources, and
+							access external websites. In HTML, hyperlinks are created using the
+							<code>&lt;a&gt;</code> (anchor) tag. This tutorial will guide you through
+							how to create and use hyperlinks effectively in your HTML documents.
 						</p>
 					</div>
 				</div>
@@ -216,256 +217,6 @@
 			<!-- end of bootstrap hero -->
 		</header>
 		<main>
-			<section>
-				<h2>Ordered lists (<code>&lt;ol&gt;</code>)</h2>
-				<p>
-					An ordered list is used when the order of items is important. Each item in
-					an ordered list is numbered automatically.
-				</p>
-			</section>
-			<section>
-				<h3>Example:</h3>
-				<textarea cols="50" rows="8" style="resize: none">
-&lt;ol&gt;
-    &lt;li&gt;First Item&lt;/li&gt;
-    &lt;li&gt;Second Item&lt;/li&gt;
-    &lt;li&gt;Third Item&lt;/li&gt;
-&lt;/ol&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<ol>
-					<li>First Item</li>
-					<li>Second Item</li>
-					<li>Third Item</li>
-				</ol>
-			</section>
-			<section>
-				<h3>Customizing Ordered Lists</h3>
-				<p>
-					You can customize the numbering style of ordered lists using the
-					<code>type</code> attribute.
-				</p>
-				<ul>
-					<li>Numerical (default): <code>&lt;ol type="1"&gt;</code> (1, 2, 3...)</li>
-					<li>Uppercase Letters: <code>&lt;ol type="A"&gt;</code> (A, B, C...)</li>
-					<li>Lowercase Letters: <code>&lt;ol type="a"&gt;</code> (a, b, c...)</li>
-					<li>
-						Uppercase Roman Numerals: <code>&lt;ol type="I"&gt;</code> (I, II, III...)
-					</li>
-					<li>
-						Lowercase Roman Numerals: <code>&lt;ol type="i"&gt;</code> (i, ii, iii...)
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h3>Example:</h3>
-				<textarea cols="50" rows="8" style="resize: none">
- &lt;ol type="I"&gt;
-    &lt;li&gt;First Item&lt;/li&gt;
-    &lt;li&gt;Second Item&lt;/li&gt;
-    &lt;li&gt;Third Item&lt;/li&gt;
- &lt;/ol&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<ol type="I">
-					<li>First Item</li>
-					<li>Second Item</li>
-					<li>Third Item</li>
-				</ol>
-			</section>
-
-			<hr />
-
-			<section>
-				<h2>Unordered Lists (<code>&lt;ul&gt;</code>)</h2>
-				<p>
-					An unordered list is used when the order of items is not important. Each
-					item is marked with a bullet point by default.
-				</p>
-			</section>
-			<section>
-				<h3>Example:</h3>
-				<textarea cols="50" rows="8" style="resize: none">
-&lt;ul&gt;
-    &lt;li&gt;First Item&lt;/li&gt;
-    &lt;li&gt;Second Item&lt;/li&gt;
-    &lt;li&gt;Third Item&lt;/li&gt;
-&lt;/ul&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<ul>
-					<li>First Item</li>
-					<li>Second Item</li>
-					<li>Third Item</li>
-				</ul>
-			</section>
-
-			<hr />
-
-			<section>
-				<h2>Description Lists (<code>&lt;dl&gt;</code>)</h2>
-				<p>
-					A description list is used for terms and their corresponding definitions.
-					It consists of pairs of terms (<code>&lt;dt&gt;</code>) and descriptions
-					(<code>&lt;dd&gt;</code>).
-				</p>
-			</section>
-			<section>
-				<h3>Example:</h3>
-				<textarea cols="50" rows="11" style="resize: none">
-&lt;dl&gt;
-    &lt;dt&gt;HTML&lt;/dt&gt;
-    &lt;dd&gt;A markup language used to create web pages.&lt;/dd&gt;
-    &lt;dt&gt;CSS&lt;/dt&gt;
-    &lt;dd&gt;A stylesheet language used to describe the presentation of a web page.&lt;/dd&gt;
-    &lt;dt&gt;JavaScript&lt;/dt&gt;
-    &lt;dd&gt;A programming language used to add interactivity to a web page.&lt;/dd&gt;
-&lt;/dl&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<dl>
-					<dt>HTML</dt>
-					<dd>A markup language used to create web pages.</dd>
-					<dt>CSS</dt>
-					<dd>
-						A stylesheet language used to describe the presentation of a web page.
-					</dd>
-					<dt>JavaScript</dt>
-					<dd>A programming language used to add interactivity to a web page.</dd>
-				</dl>
-			</section>
-
-			<hr />
-
-			<section>
-				<h2>Nested Lists</h2>
-				<p>
-					You can also create nested lists, where one list is placed inside another.
-					This is useful for creating multi-level categories.
-				</p>
-			</section>
-			<section>
-				<h3>Example Nested Ordered Lists</h3>
-				<textarea cols="50" rows="15" style="resize: none">
-&lt;ol&gt;
-    &lt;li&gt;Item 1
-        &lt;ol&gt;
-            &lt;li&gt;Subitem 1&lt;/li&gt;
-            &lt;li&gt;Subitem 2&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/li&gt;
-    &lt;li&gt;Item 2
-        &lt;ol&gt;
-            &lt;li&gt;Subitem 3&lt;/li&gt;
-            &lt;li&gt;Subitem 4&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<ol>
-					<li>
-						Item 1
-						<ol>
-							<li>Subitem 1</li>
-							<li>Subitem 2</li>
-						</ol>
-					</li>
-					<li>
-						Item 2
-						<ol>
-							<li>Subitem 3</li>
-							<li>Subitem 4</li>
-						</ol>
-					</li>
-				</ol>
-			</section>
-			<section>
-				<h3>Example Unordered Lists</h3>
-				<textarea cols="50" rows="15" style="resize: none">
-&lt;ul&gt;
-    &lt;li&gt;Item 1
-        &lt;ul&gt;
-            &lt;li&gt;Subitem 1&lt;/li&gt;
-            &lt;li&gt;Subitem 2&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;Item 2
-        &lt;ul&gt;
-            &lt;li&gt;Subitem 3&lt;/li&gt;
-            &lt;li&gt;Subitem 4&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-                    </textarea
-				>
-			</section>
-			<section>
-				<h3>Output:</h3>
-				<ul>
-					<li>
-						Item 1
-						<ul>
-							<li>Subitem 1</li>
-							<li>Subitem 2</li>
-						</ul>
-					</li>
-					<li>
-						Item 2
-						<ul>
-							<li>Subitem 3</li>
-							<li>Subitem 4</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Additional Resources</h2>
-				<ul>
-					<li>
-						<a
-							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
-							target="_blank"
-							>MDN Web Docs - Ordered Lists</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
-							target="_blank"
-							>MDN Web Docs - Unordered Lists</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl"
-							target="_blank"
-							>MDN Web Docs - Description Lists</a
-						>
-					</li>
-					<li>
-						<a href="https://www.w3schools.com/html/html_lists.asp" target="_blank"
-							>W3Schools - HTML Lists</a
-						>
-					</li>
-				</ul>
-			</section>
-			<br /><br />
 		</main>
 		<!-- bootstrap sticky footer -->
 		<footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
