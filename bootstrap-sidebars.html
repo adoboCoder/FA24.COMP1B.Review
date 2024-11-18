@@ -202,14 +202,10 @@
 			<!-- bootstrap hero -->
 			<div class="bg-dark text-secondary px-4 py-5 text-center">
 				<div class="py-5">
-					<h1 class="display-5 fw-bold text-white">HTML - Hyperlinks</h1>
+					<h1 class="display-5 fw-bold text-white">Bootstrap - Sidebars</h1>
 					<div class="col-lg-6 mx-auto">
 						<p class="fs-5 mb-4">
-							Hyperlinks (or links) are one of the most fundamental elements of the
-							web, allowing users to navigate between pages, download resources, and
-							access external websites. In HTML, hyperlinks are created using the
-							<code>&lt;a&gt;</code> (anchor) tag. This tutorial will guide you through
-							how to create and use hyperlinks effectively in your HTML documents.
+							Reference: <a href="https://getbootstrap.com/docs/5.3/examples/sidebars/" target="_blank">https://getbootstrap.com/docs/5.3/examples/sidebars/</a>
 						</p>
 					</div>
 				</div>
@@ -217,6 +213,88 @@
 			<!-- end of bootstrap hero -->
 		</header>
 		<main>
+			<div>
+				<p>1. <a href="bootstrap.html">Add Bootstrap Libraries</a> to your HTML Page</p><br>
+		   </div>
+		   <hr>
+		   <div>
+			  <h2>Examples</h2>
+			  <div>
+				<h3>Sidebar with Brand and Links</h3>
+				<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+					<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+					  <span class="fs-4">Sidebar</span>
+					</a>
+					<hr>
+					<ul class="nav nav-pills flex-column mb-auto">
+					  <li class="nav-item">
+						<a href="#" class="nav-link active" aria-current="page">
+						  Home
+						</a>
+					  </li>
+					  <li>
+						<a href="#" class="nav-link text-white">
+						  Dashboard
+						</a>
+					  </li>
+					  <li>
+						<a href="#" class="nav-link text-white">
+						  Orders
+						</a>
+					  </li>
+					  <li>
+						<a href="#" class="nav-link text-white">
+						  Products
+						</a>
+					  </li>
+					  <li>
+						<a href="#" class="nav-link text-white">
+						  Customers
+						</a>
+					  </li>
+					</ul>
+				</div>
+				<br>
+				<textarea cols="150" rows="35">
+	<!-- Sidebar with Brand and Links -->
+	<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+		<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+		  <span class="fs-4">Sidebar</span>
+		</a>
+		<!-- divider horizonal line-->
+		<hr>
+		<!-- links in an unordered list -->
+		<ul class="nav nav-pills flex-column mb-auto">
+		  <li class="nav-item">
+			<a href="#" class="nav-link active" aria-current="page">
+			  Home
+			</a>
+		  </li>
+		  <li>
+			<a href="#" class="nav-link text-white">
+			  Dashboard
+			</a>
+		  </li>
+		  <li>
+			<a href="#" class="nav-link text-white">
+			  Orders
+			</a>
+		  </li>
+		  <li>
+			<a href="#" class="nav-link text-white">
+			  Products
+			</a>
+		  </li>
+		  <li>
+			<a href="#" class="nav-link text-white">
+			  Customers
+			</a>
+		  </li>
+		</ul>
+	</div>
+				</textarea>
+			</div>
+		</div>
 		</main>
 		<!-- bootstrap sticky footer -->
 		<footer class="footer mt-auto py-3 bg-body-tertiary fixed-bottom">
